@@ -2,11 +2,12 @@
 name: Git_Test
 
 # Trigger the workflow on push or pull request
-on:
-  - push
+on: 
+  push
 
-jobs:
-  build:
+  jobs:
+  
+    build:
 
     # The type of machine to run the job on
     runs-on: ubuntu-latest
