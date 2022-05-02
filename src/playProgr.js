@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import getUserName from './cli';
+import getUserName from './cli.js';
 
 const ROUNDS_NUMBER = 3;
 const MAX_FIRST_NUMBER = 5;
