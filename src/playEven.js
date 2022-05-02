@@ -13,7 +13,7 @@ const playEven = () => {
     const answer = readlineSync.question(`Question: ${number}\nYour answer: `);
     const correct = (number % 2 === 0 && answer === 'yes') || (number % 2 === 1 && answer === 'no');
     if (!correct) {
-      console.log('Let\'s try again, Sam!');
+      console.log(`Let's try again, ${name}!`);
       return false;
     }
     console.log('Correct!');
