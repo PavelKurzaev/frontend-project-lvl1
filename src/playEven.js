@@ -12,7 +12,11 @@ const playEven = () => {
     const number = Math.trunc(Math.random() * MAX_NUMBER);
     const answer = readlineSync.question(`Question: ${number}\nYour answer: `);
     const correct = (number % 2 === 0 && answer === 'yes') || (number % 2 === 1 && answer === 'no');
-    if (!correct) { return false; }
+    if (!correct) {
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+      console.log('Let\'s try again, Sam!');
+      return false;
+    }
     console.log('Correct!');
     i -= 1;
   } while (i > 0);
