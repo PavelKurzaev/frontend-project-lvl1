@@ -22,7 +22,7 @@ const playProgr = () => {
     }
     const correctAnswer = progression[omitedPosition];
     progression[omitedPosition] = '..';
-    console.log('Question: ', progression.join(' '));
+    console.log('Question:', progression.join(' '));
 
     const answer = Number(readlineSync.question('Your answer: '));
     const correct = answer === correctAnswer;

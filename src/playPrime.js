@@ -24,6 +24,7 @@ const playPrime = () => {
     const answer = readlineSync.question(`Question: ${number}\nYour answer: `);
     const correct = (isPrime(number) && answer === 'yes') || (!isPrime(number) && answer === 'no');
     if (!correct) {
+      console.log(`Let's try again, ${name}!`);
       return false;
     }
     console.log('Correct!');
