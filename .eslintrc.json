@@ -13,6 +13,6 @@
     },
     "rules": {
         "no-console": "off",
-        "import/extentions": "off"
+        "import/extentions": "on"
     }
 }
