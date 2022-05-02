@@ -13,6 +13,12 @@
     },
     "rules": {
         "no-console": "off",
-        "import/extentions": "on"
+        "import/extentions": [
+            "off",
+            {
+                "js": "ignorePackages",
+                "json": "never" 
+            }
+        ]
     }
 }
