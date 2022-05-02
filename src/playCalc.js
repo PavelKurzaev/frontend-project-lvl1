@@ -2,11 +2,12 @@ import readlineSync from 'readline-sync';
 import getUserName from '../src/cli.js';
 
 const MAX_NUMBER = 100;
+const ROUNDS_NUMBER = 3;
 
 const playCalc = () => {
     const name = getUserName('What is the result of the expression?');
 
-    let i = 3;
+    let i = ROUNDS_NUMBER;
     const operArray = ['+', '-', '*', '/'];
     do {
         const number1 = Math.trunc(Math.random() * MAX_NUMBER);
