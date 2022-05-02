@@ -33,7 +33,7 @@ const playCalc = () => {
     const correct = answer === correctAnswer;
     if (!correct) {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      console.log(`Let's try again, ${name}!`);
+      console.log('Let\'s try again, Sam!');
       return false;
     }
     console.log('Correct!');
