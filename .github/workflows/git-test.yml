@@ -1,13 +1,9 @@
 # Name of workflow
-name: Git Test
+name: Git_Test
 
 # Trigger the workflow on push or pull request
 on:
   - push
-  - pull_request
-
-env:
-  CI: true
 
 jobs:
   build:
