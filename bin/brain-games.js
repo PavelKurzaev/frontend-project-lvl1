@@ -3,3 +3,4 @@
 import sayHello from '../src/cli.js';
 
 sayHello();
+
