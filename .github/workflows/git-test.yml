@@ -6,8 +6,8 @@ on:
   push
 
   jobs:
-  
     build:
+    name: Test Job
 
     # The type of machine to run the job on
     runs-on: ubuntu-latest
