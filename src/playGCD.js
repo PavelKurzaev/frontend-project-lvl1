@@ -2,6 +2,7 @@ import readlineSync from 'readline-sync';
 import getUserName from './cli.js';
 
 const MAX_NUMBER = 100;
+const ROUNDS_NUMBER = 3;
 
 const gcd = (a, b) => {
   let a1 = Math.abs(a);
@@ -22,7 +23,7 @@ const gcd = (a, b) => {
 const playGCD = () => {
   const name = getUserName('Find the greatest common divisor of given numbers.');
 
-  let i = 3;
+  let i = ROUNDS_NUMBER;
   do {
     const number1 = Math.trunc(Math.random() * MAX_NUMBER);
     const number2 = Math.trunc(Math.random() * MAX_NUMBER);
